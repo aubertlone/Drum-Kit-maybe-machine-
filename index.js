@@ -11,17 +11,24 @@ for (var j = 0; j < numberOfButtons; j++) {
     animation(buttonStyle);
   });
 }
-  
+
 document.addEventListener("keypress", function(event) {
   sound(event.key);
   animation(event.key);
 });
+
+
+
   
 function sound(key) {
   switch (key) {
      case "1":
       var sound1 = new Audio("music/1.mp3");
-      sound1.play();
+      if (!sound1.paused && sound1.currentTime > 0 && !sound1.ended) {
+        sound1.pause()
+      } else {
+        sound1.play()
+      }
       break;
 
       case "2":
@@ -115,3 +122,7 @@ function animation(currentKey) {
     activeButton.classList.remove("animation");
   }, 500);
 }
+
+document.getElementById('stopButton').addEventListener('click', () => {
+  window.location.reload()
+});
