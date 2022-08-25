@@ -2,5 +2,19 @@
   "name": "Drum Kit or Something",
   "description": "Build an Extension!",
   "version": "1.0",
-  "manifest_version": 3
+  "manifest_version": 2,
+  "background" : {
+  "service_worker" : "background.js"
+    
+  },
+  "action" : {
+    
+  },
+
+  "permissions": [
+    "tabs",
+     "background"
+    ]
+
+  
 }

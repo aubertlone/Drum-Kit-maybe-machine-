@@ -1,1 +1,33 @@
 
+/*
+"manifest_version": 2,
+
+"name:": "Ryan's Study Music",
+"description": "
+
+
+*/
+
+/* *{
+    border: solid;
+} */
+
+.button-container{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 3, 1fr;
+}
+
+
+.buttons{
+    list-style-type: none;
+    margin: 20px;
+    /* border: solid; */
+    width: 90%;
+    height: 50%;
+
+}
+
+.button {
+    width: 
+}
