@@ -19,7 +19,7 @@ document.addEventListener("keypress", function(event) {
   
 function sound(key) {
   switch (key) {
-    case "1":
+     case "1":
       var sound1 = new Audio("music/1.mp3");
       sound1.play();
       break;
@@ -73,12 +73,12 @@ function sound(key) {
   
     case "d":
       var sound11 = new Audio('music/d.wav');
-      sound7.play();
+      sound11.play();
       break;
 
       case "f":
-        var sound8 = new Audio('music/f.wav');
-        sound8.play();
+        var sound12 = new Audio('music/f.wav');
+        sound12.play();
         break;
 
         case "z":
@@ -113,5 +113,5 @@ function animation(currentKey) {
   
   setTimeout(function() {
     activeButton.classList.remove("animation");
-  }, 100);
+  }, 500);
 }
