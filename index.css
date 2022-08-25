@@ -50,16 +50,16 @@ h2 {
 
 .all {
     position: absolute;
-    left: 510px;
+    left: 511px;
     top: 275px;
     display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 44px;
+  grid-row-gap: 43px;
   grid-column-gap: 44px;
 }
   
 .animation {
-    box-shadow: 0 3px 4px 0 #DBEDF3;
+    box-shadow: 10px 10px 10px 10px #ffffff;
     opacity: 1.0;
 }
   
